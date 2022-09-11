@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    
+
+
+
+
+
+<?php 
+
+
+
+$TresPogi= array (
+    array(1,"Bulbasaur","Grass","Poison","Overgrow",45, 49, 49),
+    array(2,"Ivysaur","Grass","Poison","Overgrow",60, 62, 63),
+    array(3,"Venusaur","Grass","Poison","Overgrow",80, 82, 83),
+    array(4,"Charmander","Fire","N/A","Blaze",39, 52, 43),
+    array(5,"Charmeleon","Fire","N/A","Blaze",58, 64, 58),
+    array(6,"Charizard","Fire","Flying","Blaze",78, 84, 78),
+    array(7,"Squirtle","Water","N/A","Torrent",44, 48, 65),
+    array(8,"Wartortle","Water","N/A","Torrent",59, 63, 80),
+    array(9,"Blastoise","Water","N/A","Torrent",79, 83, 100),
+    array(10,"Caterpie","Bug","N/A","Sheild Dust",50, 20, 55),
+  );
+
+
+  echo "<h3>Number of Elements: ".count($TresPogi)."</h3><br>";
+
+
+  echo "<table>";
+  echo "<tr>";
+  echo "<th>Id</th><th>Species</th><th>Type1</th>
+  <th>Type2</th><th>Ability</th><th>Hp</th><th>Attack</th><th>Defence</th></tr>";
+
+  foreach ($TresPogi as $element ) {
+ 
+    echo "<tr><td>".$element [0]."</td><td>".$element [1]."</td>
+    <td>".$element [2]."</td><td>".$element [3]."</td>
+    <td>".$element [4]."</td><td>".$element [5]."</td>
+    <td>".$element [6]."</td><td>".$element [7]."</td></tr>";
+   
+    
+ }
+
+ echo "</table>";
+
+ $favorite = $TresPogi[5][1];
+
+
+
+
+?>
+
+
+
+
+
+
+
+
+
+</body>
+</html>
